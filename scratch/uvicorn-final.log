@@ -1,0 +1,42 @@
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     Started parent process [868]
+INFO:     Started server process [871]
+INFO:     Waiting for application startup.
+INFO:     Started server process [870]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:33712 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33720 - "POST /scenes/SCENE_A/revisions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:33728 - "POST /scenes/SCENE_A/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33738 - "POST /scenes/SCENE_A/revisions HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:33742 - "POST /scenes/SCENE_A/revisions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:33758 - "POST /scenes/SCENE_A/revisions HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:33766 - "POST /scenes/SCENE_A/revisions HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:33772 - "GET /scenes?west=0&south=0&east=1&north=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33786 - "POST /scenes/SCENE_B/revisions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:33790 - "GET /scenes?west=116.2&south=39.2&east=116.8&north=39.8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33796 - "GET /scenes?west=9&south=9&east=12&north=12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33812 - "GET /scenes?start_time=2026-06-20T00:00:00Z&end_time=2026-07-10T00:00:00Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33824 - "GET /scenes?start_time=2026-05-01T00:00:00Z&end_time=2026-06-10T00:00:00Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33838 - "GET /scenes/SCENE_A/revisions/3/bands/B04/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33852 - "GET /scenes/SCENE_A/revisions/1/bands/B08/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33854 - "GET /scenes/SCENE_A/revisions/1/bands/B08/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33868 - "POST /scenes/SCENE_C/revisions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:33860 - "POST /scenes/SCENE_C/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33884 - "POST /scenes/SCENE_C/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33888 - "POST /scenes/SCENE_C/revisions HTTP/1.1" 200 OK
+INFO:     Received SIGTERM, exiting.
+INFO:     Terminated child process [870]
+INFO:     Terminated child process [871]
+INFO:     Waiting for child process [870]
+INFO:     Shutting down
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [871]
+INFO:     Finished server process [870]
+INFO:     Waiting for child process [871]
+INFO:     Stopping parent process [868]
