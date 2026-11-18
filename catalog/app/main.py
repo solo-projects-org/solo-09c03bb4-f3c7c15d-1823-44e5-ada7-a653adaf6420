@@ -21,7 +21,12 @@ from fastapi.responses import FileResponse, RedirectResponse, Response
 
 from . import storage
 from .config import Settings, get_settings
-from .db import check_db_alive, get_conn, init_db
+from .db import (
+    check_db_alive,
+    get_conn,
+    init_db,
+    upsert_current_revision,
+)
 from .schemas import BandOut, HealthOut, RevisionOut, SceneSummary
 
 _SCENE_ID_RE = re.compile(r"^[A-Za-z0-9_.\-]{1,128}$")
@@ -136,7 +141,10 @@ def _revision_out(
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     settings = get_settings()
-    init_db()
+    # init_db creates the schema, migrates an existing history-only catalog by
+    # rebuilding the current-scene accelerator once, and reports whether the
+    # R*Tree spatial index is active on this SQLite build.
+    app.state.rtree_enabled = init_db()
     storage.cleanup_tmp(settings)
     # Refuse to start if the database references band files that are gone.
     storage.verify_catalog_integrity(settings)
@@ -302,6 +310,25 @@ def submit_revision(
             "VALUES (?, ?, 'B08', ?, ?, ?)",
             (scene_id, revision, stored_b08.sha256, stored_b08.size_bytes, stored_b08.stored_path),
         )
+
+        # 5) Keep the current-revision accelerator in lockstep. This runs in
+        #    the same transaction: if commit fails, the index rolls back too,
+        #    and readers under WAL see either the old or the new complete
+        #    state -- never a scene half on its old and half on its new
+        #    location. Only this one scene's row is touched, so other scenes'
+        #    submissions never wait on a whole-catalog rebuild.
+        upsert_current_revision(
+            conn,
+            request.app.state.rtree_enabled,
+            scene_id=scene_id,
+            revision=revision,
+            acquisition_time=acq_str,
+            west=west,
+            south=south,
+            east=east,
+            north=north,
+            is_first_revision=latest is None,
+        )
         conn.commit()
 
         scene_row = conn.execute(
@@ -337,6 +364,12 @@ def query_scenes(
 
     Only scenes with both verified bands are ever present, so every result
     carries B04 and B08 download URLs.
+
+    The query reads ``current_scenes`` (one row per scene, maintained on every
+    submit) instead of the full revision history, so its cost is bounded by the
+    number of current scenes -- historical revisions are never scanned. A
+    bbox search additionally drives the SQLite R*Tree spatial index when the
+    running build supports it.
     """
     settings = get_settings()
     bbox_values = [west, south, east, north]
@@ -351,33 +384,44 @@ def query_scenes(
     if start and end and start > end:
         raise HTTPException(422, "start_time must be <= end_time")
 
-    rows = conn.execute(
+    use_rtree = bool(getattr(request.app.state, "rtree_enabled", False))
+    params: dict[str, object] = {"start": start, "end": end}
+
+    if has_bbox and use_rtree:
+        # R*Tree narrows candidates by tree search. It stores coordinates as
+        # 32-bit floats, so the exact 64-bit intersection predicates are
+        # re-applied against current_scenes afterwards to keep semantics
+        # identical to a history-table query.
+        params.update(west=west, south=south, east=east, north=north)
+        sql = """
+            SELECT c.*
+            FROM current_scenes_rtree r
+            JOIN current_scenes c ON c.rowid = r.id
+            WHERE r.minx <= :east AND r.maxx >= :west
+              AND r.miny <= :north AND r.maxy >= :south
+              AND c.west <= :east AND c.east >= :west
+              AND c.south <= :north AND c.north >= :south
+              AND (:start IS NULL OR c.acquisition_time >= :start)
+              AND (:end   IS NULL OR c.acquisition_time <= :end)
+            ORDER BY c.scene_id
         """
-        SELECT s.*
-        FROM scenes s
-        JOIN (
-            SELECT scene_id, MAX(revision) AS revision
-            FROM scenes
-            GROUP BY scene_id
-        ) latest
-          ON latest.scene_id = s.scene_id AND latest.revision = s.revision
-        WHERE (:has_bbox = 0
-               OR (s.west <= :east AND s.east >= :west
-                   AND s.south <= :north AND s.north >= :south))
-          AND (:start IS NULL OR s.acquisition_time >= :start)
-          AND (:end IS NULL OR s.acquisition_time <= :end)
-        ORDER BY s.scene_id
-        """,
-        {
-            "has_bbox": 1 if has_bbox else 0,
-            "west": west,
-            "south": south,
-            "east": east,
-            "north": north,
-            "start": start,
-            "end": end,
-        },
-    ).fetchall()
+    else:
+        clauses = []
+        if has_bbox:
+            clauses.append(
+                "(c.west <= :east AND c.east >= :west "
+                "AND c.south <= :north AND c.north >= :south)"
+            )
+            params.update(west=west, south=south, east=east, north=north)
+        clauses.append("(:start IS NULL OR c.acquisition_time >= :start)")
+        clauses.append("(:end IS NULL OR c.acquisition_time <= :end)")
+        sql = (
+            "SELECT c.* FROM current_scenes c WHERE "
+            + " AND ".join(clauses)
+            + " ORDER BY c.scene_id"
+        )
+
+    rows = conn.execute(sql, params).fetchall()
 
     return [
         SceneSummary(

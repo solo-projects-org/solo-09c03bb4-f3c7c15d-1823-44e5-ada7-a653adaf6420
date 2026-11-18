@@ -1,0 +1,185 @@
+INFO:     Uvicorn running on http://127.0.0.1:8091 (Press CTRL+C to quit)
+INFO:     Started parent process [2827]
+INFO:     Started server process [2831]
+INFO:     Waiting for application startup.
+INFO:     Started server process [2830]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:42934 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42944 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42952 - "GET /scenes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42962 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33842 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33848 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33862 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33866 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33880 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33896 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33908 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33910 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33914 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33928 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33932 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33936 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33948 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33954 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33964 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33972 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33974 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33986 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34002 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34010 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34016 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34030 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34046 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34056 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34060 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34062 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34076 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34086 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34088 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34096 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34112 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34120 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34128 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34138 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34144 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34156 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34160 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34166 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34174 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34188 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34198 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34206 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34208 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34212 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34228 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34236 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34248 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34264 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34274 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34280 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34288 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34294 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34308 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34320 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34332 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34348 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34352 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34360 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34372 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34386 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34394 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34404 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34418 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34426 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34434 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34444 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34460 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34466 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34472 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34476 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34478 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34488 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34504 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34520 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34536 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34538 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34540 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34552 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34568 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34582 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34598 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34608 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34616 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34624 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34626 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34638 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34642 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34658 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34666 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34670 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34678 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34692 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34704 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34706 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34716 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34726 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34736 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34738 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34744 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34754 - "GET /scenes?west=-120.0&south=-80.0&east=-119.0&north=-79.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34770 - "POST /scenes/S00000/revisions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:34774 - "GET /scenes?west=-75.0&south=-60.0&east=-74.6&north=-59.6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34784 - "GET /scenes?west=-100&south=-80&east=-99&north=-79 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34790 - "GET /scenes?start_time=2026-01-01T00:00:00.000000Z&end_time=2026-02-01T00:00:00.000000Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34798 - "GET /scenes/S00000/revisions/21/bands/B04/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34874 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34886 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34842 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34900 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34906 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34912 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34936 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34940 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34952 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34956 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34920 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34964 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34968 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34980 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34858 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34982 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34972 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34996 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34986 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35010 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35036 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35040 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35050 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35058 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35072 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35086 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35022 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35092 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35102 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35106 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35108 - "POST /scenes/W03/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35124 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35006 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35138 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35142 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35122 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35160 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35156 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35176 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35180 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35198 - "POST /scenes/W02/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35204 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35212 - "POST /scenes/W00/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35184 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35226 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35240 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35248 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35262 - "POST /scenes/W01/revisions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34802 - "GET /scenes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34810 - "GET /scenes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34816 - "GET /scenes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34826 - "GET /scenes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35274 - "POST /scenes/S00001/revisions HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:35280 - "POST /scenes/S00002/revisions HTTP/1.1" 200 OK
+INFO:     Received SIGTERM, exiting.
+INFO:     Terminated child process [2830]
+INFO:     Terminated child process [2831]
+INFO:     Waiting for child process [2830]
+INFO:     Shutting down
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2831]
+INFO:     Finished server process [2830]
+INFO:     Waiting for child process [2831]
+INFO:     Stopping parent process [2827]
